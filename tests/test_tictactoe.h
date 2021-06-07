@@ -15,7 +15,7 @@ TEST(x_win, row)
 
     testing::internal::CaptureStdout();
 
-    int select[]={4,2,6,3,5};
+    int select[]={1,4,3,7,2};
     int size=sizeof(select)/4;
 
     tictactoe(select, size);
