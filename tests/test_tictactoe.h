@@ -30,7 +30,7 @@ TEST(x_win, column)
 
     testing::internal::CaptureStdout();
 
-    int select[]={3,5,6,1,9};
+    int select[]={2,4,5,1,8};
     int size=sizeof(select)/4;
 
     tictactoe(select, size);
@@ -45,7 +45,7 @@ TEST(x_win, diagonal)
 
     testing::internal::CaptureStdout();
 
-    int select[] = {1,2,5,6,9};
+    int select[] = {3,2,5,6,7};
     int size=sizeof(select)/4;
 
     tictactoe(select, size);
@@ -60,7 +60,7 @@ TEST(o_win, row)
 
     testing::internal::CaptureStdout();
 
-    int select[]= {5,1,9,3,7,8,4,2};
+    int select[]= {4,1,9,3,7,8,5,2};
     int size=sizeof(select)/4;
 
     tictactoe(select, size);
@@ -90,7 +90,7 @@ TEST(o_win, diagonal)
 
     testing::internal::CaptureStdout();
 
-    int select[]={1,5,6,3,8,7};
+    int select[]={2,1,6,5,8,9};
     int size=sizeof(select)/4;
 
     tictactoe(select, size);
@@ -105,7 +105,7 @@ TEST(draw, draw)
 
     testing::internal::CaptureStdout();
 
-    int select[]={5,7,2,8,9,6,4,1,3};
+    int select[]={5,7,9,1,4,6,8,3};
     int size=sizeof(select)/4;
 
     tictactoe(select, size);
