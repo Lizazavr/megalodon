@@ -105,7 +105,7 @@ TEST(draw, draw)
 
     testing::internal::CaptureStdout();
 
-    int select[]={5,7,9,1,4,6,8,3};
+    int select[]={5,7,9,1,4,6,8,2,3};
     int size=sizeof(select)/4;
 
     tictactoe(select, size);
