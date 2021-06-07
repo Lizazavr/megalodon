@@ -22,7 +22,7 @@ void player_turn(int select){
         case 8: row=2; column=1; break;
         case 9: row=2; column=2; break;
         default:
-            cout<<"Невозможный ход";
+            cout<<"Impossible move";
     }
 
     if(turn == 'X' && board[row][column] != 'X' && board[row][column] != 'O'){
@@ -67,15 +67,15 @@ void tictactoe(int select[], int size)
         i++;
     }
     if(turn == 'O' && draw == false && gameover() == false){
-        cout << "Игрок Х выиграл игру!!!";
+        cout << "The first player won the game!!!";
     }
     else if(turn == 'X' && draw == false && gameover() == false){
-        cout << "Игрок О выиграл игру!!!";
+        cout << "The second player won the game!!!";
     }
     else if (draw)
-        cout << "Ничья!!!";
+        cout << "Draw!!!";
     else if (size >1)
-        cout << "Невозможно выявить победителя";
+        cout << "It is impossible to identify the winner";
     for(int i=0; i<3; i++)
     for(int j=0; j<3; j++)
     board[i][j] = i*3+j;
