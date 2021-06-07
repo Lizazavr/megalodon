@@ -11,7 +11,7 @@ extern "C" {
 
 TEST(x_win, row)
 {
-    std::string output_text = "Игрок Х выиграл игру!!!";
+    std::string output_text = "The first player won the game!!!";
 
     testing::internal::CaptureStdout();
 
@@ -26,7 +26,7 @@ TEST(x_win, row)
 
 TEST(x_win, column)
 {
-    std::string output_text = "Игрок Х выиграл игру!!!";
+    std::string output_text = "The first player won the game!!!";
 
     testing::internal::CaptureStdout();
 
@@ -41,7 +41,7 @@ TEST(x_win, column)
 
 TEST(x_win, diagonal)
 {
-    std::string output_text = "Игрок Х выиграл игру!!!";
+    std::string output_text = "The first player won the game!!!";
 
     testing::internal::CaptureStdout();
 
@@ -56,7 +56,7 @@ TEST(x_win, diagonal)
 
 TEST(o_win, row)
 {
-    std::string output_text = "Игрок О выиграл игру!!!";
+    std::string output_text = "The second player won the game!!!";
 
     testing::internal::CaptureStdout();
 
@@ -71,7 +71,7 @@ TEST(o_win, row)
 
 TEST(o_win, column)
 {
-    std::string output_text = "Игрок О выиграл игру!!!";
+    std::string output_text = "The second player won the game!!!";
 
     testing::internal::CaptureStdout();
 
@@ -86,7 +86,7 @@ TEST(o_win, column)
 
 TEST(o_win, diagonal)
 {
-    std::string output_text = "Игрок О выиграл игру!!!";
+    std::string output_text = "The second player won the game!!!";
 
     testing::internal::CaptureStdout();
 
@@ -101,7 +101,7 @@ TEST(o_win, diagonal)
 
 TEST(draw, draw)
 {
-    std::string output_text = "Ничья!!!";
+    std::string output_text = "Draw!!!";
 
     testing::internal::CaptureStdout();
 
@@ -116,7 +116,7 @@ TEST(draw, draw)
 
 TEST(minus, out_pos)
 {
-    std::string output_text = "Невозможный ход";
+    std::string output_text = "Impossible move";
 
     testing::internal::CaptureStdout();
 
@@ -131,7 +131,7 @@ TEST(minus, out_pos)
 
 TEST(minus, game_is_not_finished)
 {
-    std::string output_text = "Невозможно выявить победителя";
+    std::string output_text = "It is impossible to identify the winner";
 
     testing::internal::CaptureStdout();
 
